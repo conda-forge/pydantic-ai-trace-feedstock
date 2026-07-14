@@ -13,7 +13,7 @@ source:
   sha256: 866399385bc82976d6377272ca37064b599cd4ceba9515210d118b315170f48e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -51,7 +51,9 @@ about:
   summary: Fast local web viewer for pydantic-ai traces (list[ModelMessage] JSON dumps)
   license: MIT
   license_file: LICENSE
-  homepage: https://pypi.org/project/pydantic-ai-trace/
+  homepage: https://github.com/moritzwilksch/pydantic-ai-trace
+  repository: https://github.com/moritzwilksch/pydantic-ai-trace
+  documentation: https://github.com/moritzwilksch/pydantic-ai-trace
 
 extra:
   recipe-maintainers:

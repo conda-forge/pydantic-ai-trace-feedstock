@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "0.1.1"
+  version: "0.1.2"
 
 package:
   name: pydantic-ai-trace
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pydantic-ai-trace/pydantic_ai_trace-${{ version }}.tar.gz
-  sha256: 866399385bc82976d6377272ca37064b599cd4ceba9515210d118b315170f48e
+  sha256: a7a0164efb61d5350f94f22b6ccf33b8426c871bbf8b9ec657f13ddb5e2b8772
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
